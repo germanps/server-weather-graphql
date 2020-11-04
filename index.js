@@ -5,7 +5,7 @@ const resolvers = require('./gql/resolver');
 
 require('dotenv').config({ path: '.env' });
 
-mongoose.connect(process.env.BBDD, {
+mongoose.connect('mongodb+srv://weatherinn:weather22@weather-inn.nmirx.mongodb.net/weatherinn', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: true,
